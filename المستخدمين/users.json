@@ -1,0 +1,18 @@
+[
+  {
+    "username": "Ali",
+    "jobCode": "12345",
+    "phone": "0123456789",
+    "email": "ali@gmail.com",
+    "password": "444aaa",
+    "profileImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA..."
+  },
+  {
+    "username": "Sara",
+    "jobCode": "54321",
+    "phone": "0987654321",
+    "email": "sara@gamil.com",
+    "password": "555sss",
+    "profileImage": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD..."
+  }
+]
