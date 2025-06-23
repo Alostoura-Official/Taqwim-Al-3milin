@@ -11,4 +11,7 @@
 │
 ├── index.html                       
 ├── style.css                        
-└── script.js                      
+├── script.js               
+│
+├── README.md                     
+└── LICENSE                                            
