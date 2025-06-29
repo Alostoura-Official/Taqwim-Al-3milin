@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مساعد تقويم العاملين الذكي - المدعوم من الأسطورة</title>
+	<link rel="icon" href="https://i.imgur.com/OC5R8h6.png">
+
+    <link rel="stylesheet" href="style.css">
+    	
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-container">
+            <div class="chat-header">مساعد تقويم العاملين الذكي - المدعوم من الأسطورة</div>
+            
+            <div class="chat-box" id="chat-box">
+                <div class="message bot-message">
+                    مرحباً! أنا الأسطورة، مساعدك الذكي لإدارة تقويم العاملين. كيف يمكنني مساعدتك اليوم؟
+                </div>
+            </div>
+            <div class="reset-chat">
+    <button onclick="resetChat()">🗑️ حذف المحادثة والبدء من جديد</button>
+    <button onclick="restoreChat()" id="restore-btn" style="display: none;">♻️ استعادة المحادثة السابقة</button>
+</div>
+
+	            <div class="quick-replies" id="quick-replies">
+		
+	            <button class="quick-reply" onclick="sendQuickReply('ما هي ميزات التطبيق الرئيسية؟')">ميزات التطبيق الرئيسية</button>
+                <button class="quick-reply" onclick="sendQuickReply('كيف يمكنني تحديث بياناتي الشخصية؟')">تحديث البيانات الشخصية</button>
+                <button class="quick-reply" onclick="sendQuickReply('كيف أبلغ عن مشكلة فنية؟')">الإبلاغ عن مشكلة</button>
+                <button class="quick-reply" onclick="sendQuickReply('كيف أجد جهات اتصال زملائي؟')">جهات اتصال الزملاء </button>
+                
+               
+               <button class="quick-reply" onclick="sendQuickReply('انواع الإجازات؟')">انواع الإجازات</button>
+               <button class="quick-reply" onclick="sendQuickReply('كم باقي من إجازة سنوية؟')">كم باقي من الإجازات السنوية</button>
+               <button class="quick-reply" onclick="sendQuickReply('كم باقي من إذن ؟')">كم باقي من الاذونات لدي </button>
+               <button class="quick-reply" onclick="sendQuickReply('كم مرة حصلت على إذن طبي؟')">كم باقي من الأذونات الطبية</button>
+               
+
+                
+            </div>
+            
+            <div class="chat-input-container">
+                <button class="mic-btn" id="mic-btn" onclick="startSpeechRecognition()">
+                    🎤
+                </button>
+                
+                <input type="text" id="user-input" placeholder="اكتب رسالتك هنا..." 
+                       onkeypress="if(event.keyCode === 13) sendMessage()">
+                
+                <button class="send-btn" onclick="sendMessage()">
+                    إرسال
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
