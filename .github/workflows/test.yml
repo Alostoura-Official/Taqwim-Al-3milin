@@ -1,7 +1,0 @@
-name: Test
-on: [push]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Hello from GitHub Actions!"
